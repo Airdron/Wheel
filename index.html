@@ -1,0 +1,53 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+	<title>Wheel of Fortune</title>
+
+	<script type='text/javascript' src='wp-includes/js/jquery/jquery90f9.js?ver=1.11.1'></script>
+	<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
+	<script type='text/javascript' src='wp-content/themes/responsive/js/responsive-modernizrc141.js?ver=2.6.1'></script>
+
+	<link rel='canonical' href='index.html' />
+	<link rel='shortlink' href='index.html' />
+	<link rel ="stylesheet" type="text/css" href="style/style.css"/>
+</head>
+
+<body>            
+	<div id="wrapper" class="clearfix">
+		<h1>Wheel of Fortune</h1>
+	    <script src="js/wheel5e1f.js?v=2" type="text/javascript"></script>	
+		<br/>
+			<div id="wheelcanvasOuter" style="position: relative; height: 300px; width: 300px; margin:0 auto;">
+				<canvas id="wheelcanvas" style="position: absolute; left: 0; top: 0; z-index: 0;" width="300" height="300"></canvas>
+
+				<canvas id="wheelcanvastop" style="position: absolute; left: 0; top: 0; z-index: 1;" width="300" height="300" onclick="spin();" onmousedown="wheelMouseDown(event);" onmousemove="wheelMouseMove(event);" onmouseup="wheelMouseUp(event); spin();" onmouseout="wheelMouseUp(event);" >
+				</canvas>
+			
+	</div>
+	<center>
+		<audio id="wheelAudio" preload="auto"  >
+		  	<source src="sounds/WheelDecideFX1_Soft_Short.ogg" type="audio/ogg">
+		  	<source src="sounds/WheelDecideFX1_Soft_Short.mp3" type="audio/mpeg">
+		</audio>
+		<audio id="wheelAudio2" >
+		 	<source src="sounds/WheelDecideFX1_Soft_Short.ogg" type="audio/ogg">
+		  	<source src="sounds/WheelDecideFX1_Soft_Short.mp3" type="audio/mpeg">
+		</audio>
+		<audio id="wheelAudio3" >
+		  	<source src="sounds/WheelDecideFX1_Soft_Short.ogg" type="audio/ogg">
+		  	<source src="sounds/WheelDecideFX1_Soft_Short.mp3" type="audio/mpeg">
+		</audio>
+		<br/>
+			<img src="images/unmute-button.png" id="mutebutton" onclick="toggleMute(this);" value="Mute" /> 
+		<br/>
+		<br/>
+			<a href="edit.html" class="button orange" title="Edit">Edit wheel</a>
+	</center>
+	<br/>
+			
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="application/javascript" src="js/scjs02.js"></script>
+	<br/>
+</body>
